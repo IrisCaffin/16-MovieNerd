@@ -13,7 +13,7 @@
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search for..." ng-model="searchTerm">
             <span class="input-group-btn">
-                <button class="btn btn-default" type="button" ng-click="searchForMovie">Go!</button>
+                <button class="btn btn-default" type="button" ng-click="searchForMovie()">Go!</button>
             </span>
         </div><!-- /input-group -->
 
@@ -22,7 +22,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">{{movie.Title}}</div>
                         <div class="panel-body">
-                            <img ng-src="movie.image" />
+                            <img ng-src={{movie.Poster}} class="center-block" />
                             <small>Filmed in {{movie.Year}}</small>
                             <br><a href="google.com">Click here to see this movie on IMdB</a>
                         </div>
